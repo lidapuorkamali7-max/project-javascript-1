@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <h2 class="productstitle">products(edit & delete)</h2>
+    
+ <form action="" id="form">
+     <div class="formtop"><h4 class="addproduct">add product</h4>
+   <label for="">name of product:</label>
+    <input type="text" id="nameinput">
+    <label for="">category:</label>
+    <input type="text" id="categoryinput">
+    <label for="">price:</label>
+    <input type="number" id="priceinput"></div>
+  <div class="formbottom">  <label for="">stock:</label>
+    <input type="number" id="stockinput">
+    <label for="">image:</label>
+    <input type="file" id="imageinput">
+    <button id="addbtn">add product</button></div>
+ </form>
+<p id="message"></p><hr>
+<div class="searchinput"> <label for=""><strong>search product:</strong></label>
+  <input type="text" id="searchinput"></div>
+    <p id="result"></p><hr>
+    <div id="totalamount"></div><hr>
+  <div id="displayproducts"></div>
+ 
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

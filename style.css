@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background:linear-gradient( rgb(36, 36, 36),rgba(17, 32, 195, 0.517));
+    color: rgb(211, 211, 211);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+#displayproducts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product{
+    padding: 30px;
+
+}
+.image{
+    width: 200px;
+    height: 200px;
+  background-color: rgb(251, 249, 249);
+    border: 1px solid;
+    border-radius: 3px;
+    object-fit: cover;
+}
+#form{
+    padding: 20px 0;
+}
+.formtop{
+    display: flex;
+    align-items: center;
+     margin-left: 65px;
+     margin-bottom: 20px;
+}
+.formbottom{
+     display: flex;
+    align-items: center;
+    margin-left: 180px;
+}
+label{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.editbtn,.deletebtn{
+    width: 95px;
+    font-size: 17px;
+    border: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    background-color:  rgba(7, 14, 96, 0.517);
+    padding: 8px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.searchinput{
+    margin-left: 52px;
+    padding: 20px 0;
+}
+.addproduct{
+    margin-right: 20px;
+}
+#totalamount{
+     margin-left: 65px;
+     padding: 20px 0;
+}
+#addbtn{
+    width: 110px;
+    border-radius: 4px;
+  background-color: rgba(61, 64, 101, 0.517) ;
+height: 24px;
+    font-size: 15px;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    margin-left: 6px;
+}
+.productstitle{
+    height: 70px;
+     padding-left: 75px;
+     background:linear-gradient(rgba(7, 14, 96, 0.517),rgba(66, 74, 154, 0.517));
+     padding-top: 20px;
+}
+button:hover{
+    cursor: pointer;
+    background-color:rgba(4, 7, 44, 0.517) ;
+}
