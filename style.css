@@ -5,11 +5,17 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
+    min-width: 100%;
     background:linear-gradient( rgb(36, 36, 36),rgba(17, 32, 195, 0.517));
     color: rgb(211, 211, 211);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: gray;
 }
 #displayproducts{
     width: 100%;
@@ -18,7 +24,8 @@ body{
     justify-content: space-around;
 }
 .product{
-    padding: 30px;
+   max-width: 100%;
+    padding: 15px;
 
 }
 .image{
@@ -31,18 +38,25 @@ body{
 }
 #form{
     padding: 20px 0;
-}
-.formtop{
+    margin-left: 55px;
     display: flex;
-    align-items: center;
-     margin-left: 65px;
-     margin-bottom: 20px;
+
+   flex-wrap: wrap;
+    gap: 20px;
 }
-.formbottom{
-     display: flex;
-    align-items: center;
-    margin-left: 180px;
+.category , .stock{
+    margin-top: 20px;
 }
+
+input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border: 1px solid gray;
+  height: 25px;
+}
+
+
 label{
     margin-right: 10px;
     margin-left: 10px;
@@ -63,7 +77,11 @@ label{
     padding: 20px 0;
 }
 .addproduct{
-    margin-right: 20px;
+    display: inline-block;
+    margin-left: 65px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid whitesmoke;
 }
 #totalamount{
      margin-left: 65px;
@@ -88,4 +106,125 @@ height: 24px;
 button:hover{
     cursor: pointer;
     background-color:rgba(4, 7, 44, 0.517) ;
+}
+@media (max-width:666px){
+      #form {
+        margin-left: 0;
+        padding: 20px 10px;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .formtop label{
+       margin: 0,
+    }
+    .formtop{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+        .formtop div {
+        display: flex;
+        width: 100%;
+              align-items: center;
+    }
+
+    .formtop input {
+        flex: 1;
+    min-width: 0;
+    width: auto;
+    }
+    .formmiddle label{
+       margin: 0,
+    }
+    .formmiddle{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+        .formmiddle div {
+        display: flex;
+        width: 100%;
+              align-items: center;
+    }
+
+    .formmiddle input {
+        flex: 1;
+    min-width: 0;
+    width: auto;
+    }
+    .searchinput{
+    margin-left:13px;
+  
+}
+#totalamount{
+    margin-left: 24px;
+}
+.addproduct{
+    margin-left: 24px;
+}
+}
+@media (max-width:466px){
+    #addbtn{
+        margin-top: 20px;
+    }
+}
+@media (max-width:414px){
+    .formtop,
+.formmiddle {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.formtop div,
+.formmiddle div {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.formtop input,
+.formmiddle input {
+    min-width: 0;
+}
+    .productstitle{
+       padding-left: 0;
+        text-align: center;
+        font-size: 18px;
+        width: 100vw;
+        margin: 0;
+    }
+    #form > div:last-child {
+    width: 100%;
+    min-width: 0;
+}
+
+#imageinput {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+.formbottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 15px 5px;
+}
+
+.formbottom label {
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.formbottom input {
+    flex: 1;
+    min-width: 0;
+}
+
+.formbottom button {
+    flex-basis: 100%;
+    margin-left: 0 !important;
+}
+
 }

@@ -12,20 +12,31 @@
 
 <body>
     <h2 class="productstitle">products(edit & delete)</h2>
-    
+    <h4 class="addproduct">add product</h4>
  <form action="" id="form">
-     <div class="formtop"><h4 class="addproduct">add product</h4>
-   <label for="">name of product:</label>
-    <input type="text" id="nameinput">
-    <label for="">category:</label>
+     <div class="formtop">
+  <div> <label for="">name of product:</label>
+    <input type="text" id="nameinput"></div>
+    <div class="category">
+      <label for="">category:</label>
     <input type="text" id="categoryinput">
-    <label for="">price:</label>
-    <input type="number" id="priceinput"></div>
-  <div class="formbottom">  <label for="">stock:</label>
+    </div>
+   </div>
+  <div class="formmiddle"> 
+    <div>
+      <label for="">price:</label>
+    <input type="number" id="priceinput">
+    </div> 
+     <div class="stock">
+       <label for="">stock:</label>
     <input type="number" id="stockinput">
-    <label for="">image:</label>
+     </div>
+   </div>
+   <div class="formbottom">
+     <label for="">image:</label>
     <input type="file" id="imageinput">
-    <button id="addbtn">add product</button></div>
+    <button id="addbtn">add product</button>
+   </div>
  </form>
 <p id="message"></p><hr>
 <div class="searchinput"> <label for=""><strong>search product:</strong></label>
