@@ -32,7 +32,7 @@ function displayproductsfunc(list) {
   list.forEach((product) => {
     displayproducts.innerHTML += `
       <div class='product'>
-      <img class='image'    src='${product.image}'><br><br>
+     <img class='image' src='${product.image}' loading='lazy' decoding='async'><br><br>
       <strong>name</strong>: ${product.name}<br>
       <strong>category</strong>: ${product.category}<br>
       <strong>price</strong>: $${product.price}<br>
