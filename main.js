@@ -28,9 +28,10 @@ const imageinput = document.getElementById('imageinput')
 
 let editingid = null
 function displayproductsfunc(list) {
-  displayproducts.innerHTML = ''
+     let productsHTML = ''
+
   list.forEach((product) => {
-    displayproducts.innerHTML += `
+  productsHTML += `
       <div class='product'>
      <img class='image' src='${product.image}' loading='lazy' decoding='async'><br><br>
       <strong>name</strong>: ${product.name}<br>
@@ -43,6 +44,7 @@ function displayproductsfunc(list) {
      
    `
   })
+     displayproducts.innerHTML = productsHTML
   const editbtns = document.querySelectorAll('.editbtn')
 
   editbtns.forEach((button) => {
